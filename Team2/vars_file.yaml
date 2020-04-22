@@ -1,6 +1,6 @@
 #  Launch Configuration 
 image_id:                   "ami-01bcf83376342e70e"
-security_groups:            "ainurguru"
+security_groups:            "ssh"
 instance_type:              "t2.micro"
 region:                     "us-west-2"
 # device_name:                "/dev/sda1"
@@ -12,11 +12,11 @@ aws_default_image_size:     "8"
  #        TARGET_GROUP
 protocol:                   "http"
 port:                       "80"
-vpc_id:                     "vpc-0f5e3cd008e171afb"
+vpc_id:                     "vpc-0bdc423d459ebf827"
 
-subnet_1_AZ:                "subnet-043c58a1c1e044b6b"
-subnet_2_AZ:                "subnet-04b9dc28e192d4f7c"
-subnet_3_AZ:                "subnet-0c9a8324573771275"
+subnet_1_AZ:                "subnet-0db8ca87b82367ffd"
+subnet_2_AZ:                "subnet-0b7faded26c8a77b4"
+subnet_3_AZ:                "subnet-0590513f0f0082e6f"
  
   # AutoScalingGroup
 min_size_instances:                   "3"
