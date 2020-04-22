@@ -1,0 +1,24 @@
+#  Launch Configuration 
+image_id:                   "ami-01bcf83376342e70e"
+security_groups:            "Project2"
+instance_type:              "t2.micro"
+region:                     "us-west-2"
+# device_name:                "/dev/sda1"
+# volume_size:                "8"
+# volume_type:                "gp2"  
+# iops:                       "3000"
+key_name:                   "bastion-in-london"
+aws_default_image_size:     "8"
+ #        TARGET_GROUP
+protocol:                   "http"
+port:                       "80"
+vpc_id:                     "vpc-0f5e3cd008e171afb"
+
+subnet_1_AZ:                "subnet-043c58a1c1e044b6b"
+subnet_2_AZ:                "subnet-04b9dc28e192d4f7c"
+subnet_3_AZ:                "subnet-0c9a8324573771275"
+ 
+  # AutoScalingGroup
+min_size_instances:                   "3"
+max_size_instances:                   "5"
+desired_capacity_instances:           "3"
