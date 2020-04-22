@@ -1,6 +1,6 @@
 #  Launch Configuration 
 image_id:                   "ami-01bcf83376342e70e"
-security_groups:            "Project2"
+security_groups:            "my"
 instance_type:              "t2.micro"
 region:                     "us-west-2"
 # device_name:                "/dev/sda1"
