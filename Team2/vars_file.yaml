@@ -12,11 +12,11 @@ aws_default_image_size:     "8"
  #        TARGET_GROUP
 protocol:                   "http"
 port:                       "80"
-vpc_id:                     "vpc-0f5e3cd008e171afb"
+vpc_id:                     "vpc-06b948e54a82330ce"
 
-subnet_1_AZ:                "subnet-043c58a1c1e044b6b"
-subnet_2_AZ:                "subnet-04b9dc28e192d4f7c"
-subnet_3_AZ:                "subnet-0c9a8324573771275"
+subnet_1_AZ:                "subnet-02087468cb313918b"
+subnet_2_AZ:                "subnet-05ab340a4e3b64acf"
+subnet_3_AZ:                "subnet-0a123af54a9cb609e"
  
   # AutoScalingGroup
 min_size_instances:                   "3"
