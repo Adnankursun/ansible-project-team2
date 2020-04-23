@@ -1,0 +1,37 @@
+# Security Group
+name:                        "Team2"
+region:                      "us-west-2"
+vpc_id:                      "vpc-0550023f29df0f573"
+
+# Launch Configuraton
+# name:                     "team2-lc"
+image_id:                   "ami-094bcadcd89875a32"
+key_name:                   "bastion-in-london"
+security_groups:            "Team2"
+instance_type:              "t2.micro"
+region:                     "us-west-2"
+# device_name:                "/dev/xvda"
+# volume_size:                "100"
+# volume_type:                "io1"
+# iops:                       "3000"
+
+# Target Group
+# name:                       "team2targetgroup"
+
+# Application Load Balancer
+# name:                       "team2-lb"
+subnet1:                    "subnet-095ae528b447d1d86"
+subnet2:                    "subnet-0ef249d28b04a9b39"
+subnet3:                    "subnet-0e983a469e8aea767"
+# Protocol:                   "HTTP"
+# Port:                       "80"
+# Type:                       "forward"
+TargetGroupName:            "team2targetgroup"
+
+# Auto Scaling Group
+# name:                      "team2_asg"
+launch_config_name:        "team2-lc"
+health_check_period:       "60"
+min_size:                  "3"
+max_size:                  "5"
+desired_capacity:          "3"
