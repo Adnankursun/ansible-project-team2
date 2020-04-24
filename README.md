@@ -53,7 +53,9 @@ Next Step you need  to create Security Group for EC2 and ELB in order that they 
 Step 3: Create a Launch Configuration
 
 Our AMI is built, so now we'll want to create a new Launch Configuration to describe the new instances that should be launched from this AMI. We need to choose size, type and other requirements for instances to be used by ASG, use module - ec_2_lc. 
+
 Step 4: Create a Target Group
+
 Since  each target group is used to route requests to one or more registered targets. When you create each listener rule, you specify a target group and conditions. When a rule condition is met, traffic is forwarded to the corresponding target group. Next our step we need to create Target group for Applicational Load Balancer, use module -elb_application_lb
 
 Step 5: Create an Application Load Balancer
