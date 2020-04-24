@@ -48,7 +48,7 @@ After Instance and WordPress running, we can copy AMI to localhost or different 
 
 Step 2: Create Security Group
 
-Next Step we you need  to create Security Group for EC2 and ELB in order that they can communicate with each other and taking care to open the necessary ports for your application in addition to TCP/22 for SSH, such as like HTTP ( use module ec2_group).
+Next Step you need  to create Security Group for EC2 and ELB in order that they can communicate with each other and taking care to open the necessary ports for your application in addition to TCP/22 for SSH, we need to add HTTP ( use module ec2_group).
 
 Step 3: Create a Launch Configuration
 
