@@ -40,6 +40,10 @@ sudo pip install boto
 
 sudo pip install boto3
 
+Sometimes we have errors because of boto version so we need to run following command in order to upgrade it:
+
+pip install boto3 --upgrade
+
 Step 1: Launch a new EC2 instance and Create AMI
 
 A prerequisite to setting up an application for auto scaling involves building an AMI containing your WordPress application, which will be used to launch new instances to meet demand. We'll start by launching a new instance onto which we can deploy our application by using Playbook.  
