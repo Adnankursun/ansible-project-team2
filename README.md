@@ -30,9 +30,14 @@ Setting up Ansible
 Ansible uses Boto for AWS interactions, so you'll need that installed on your control host. Your platform may differ, but the following will work for most platforms:
 
 sudo amazon-linux-extras install ansible2 (amazon linux) 
+
+
 sudo yum install python-boto3 -y
+
 sudo yum install python-pip -y
+
 sudo pip install boto 
+
 sudo pip install boto3
 
 Step 1: Launch a new EC2 instance and Create AMI
